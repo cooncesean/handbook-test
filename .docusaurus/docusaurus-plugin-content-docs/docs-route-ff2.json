@@ -1,0 +1,107 @@
+{
+  "docsSidebars": {
+    "docs": [
+      {
+        "type": "link",
+        "label": "Introduction",
+        "href": "/docs/introduction"
+      },
+      {
+        "collapsed": false,
+        "type": "category",
+        "label": "People",
+        "items": [
+          {
+            "type": "link",
+            "label": "Home",
+            "href": "/docs/people/introduction"
+          },
+          {
+            "type": "link",
+            "label": "Benefits",
+            "href": "/docs/people/benefits"
+          },
+          {
+            "type": "link",
+            "label": "Communication",
+            "href": "/docs/people/communication"
+          },
+          {
+            "type": "link",
+            "label": "Compensation",
+            "href": "/docs/people/compensation"
+          }
+        ]
+      },
+      {
+        "collapsed": false,
+        "type": "category",
+        "label": "Support",
+        "items": [
+          {
+            "type": "link",
+            "label": "Handling Safe Reports",
+            "href": "/docs/support/how-to-handle-safe-reports"
+          }
+        ]
+      },
+      {
+        "collapsed": false,
+        "type": "category",
+        "label": "Engineering",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/engineering/eng-introduction"
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Technical Design Docs",
+            "items": [
+              {
+                "type": "link",
+                "label": "Template",
+                "href": "/docs/engineering/technical-design-docs/template"
+              },
+              {
+                "type": "link",
+                "label": "Template",
+                "href": "/docs/engineering/technical-design-docs/template"
+              },
+              {
+                "type": "link",
+                "label": "Template",
+                "href": "/docs/engineering/technical-design-docs/template"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "Retrospectives",
+            "href": "/docs/engineering/retrospectives"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "How To Contribute",
+        "href": "/docs/contributing"
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/contributing": "docs",
+    "/docs/engineering/eng-introduction": "docs",
+    "/docs/engineering/retrospectives": "docs",
+    "/docs/engineering/technical-design-docs/template": "docs",
+    "/docs/introduction": "docs",
+    "/docs/people/benefits": "docs",
+    "/docs/people/communication": "docs",
+    "/docs/people/compensation": "docs",
+    "/docs/people/introduction": "docs",
+    "/docs/support/how-to-handle-safe-reports": "docs"
+  },
+  "version": null
+}

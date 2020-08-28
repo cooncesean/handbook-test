@@ -1,0 +1,19 @@
+{
+  "unversionedId": "engineering/technical-design-docs/template",
+  "id": "engineering/technical-design-docs/template",
+  "isDocsHomePage": false,
+  "title": "Template",
+  "description": "Your TDD Title",
+  "source": "@site/docs/engineering/technical-design-docs/template.md",
+  "permalink": "/docs/engineering/technical-design-docs/template",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/engineering/technical-design-docs/template.md",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Template",
+    "permalink": "/docs/engineering/technical-design-docs/template"
+  },
+  "next": {
+    "title": "Retrospectives",
+    "permalink": "/docs/engineering/retrospectives"
+  }
+}

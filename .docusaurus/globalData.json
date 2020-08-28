@@ -1,0 +1,61 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "latestVersionName": null,
+      "versions": [
+        {
+          "name": null,
+          "path": "/docs",
+          "mainDocId": "contributing",
+          "docs": [
+            {
+              "id": "contributing",
+              "path": "/docs/contributing"
+            },
+            {
+              "id": "engineering/eng-introduction",
+              "path": "/docs/engineering/eng-introduction"
+            },
+            {
+              "id": "engineering/incident-reports/eos-tracking-downtime",
+              "path": "/docs/engineering/incident-reports/eos-tracking-downtime"
+            },
+            {
+              "id": "engineering/retrospectives",
+              "path": "/docs/engineering/retrospectives"
+            },
+            {
+              "id": "engineering/technical-design-docs/template",
+              "path": "/docs/engineering/technical-design-docs/template"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/introduction"
+            },
+            {
+              "id": "people/benefits",
+              "path": "/docs/people/benefits"
+            },
+            {
+              "id": "people/communication",
+              "path": "/docs/people/communication"
+            },
+            {
+              "id": "people/compensation",
+              "path": "/docs/people/compensation"
+            },
+            {
+              "id": "people/introduction",
+              "path": "/docs/people/introduction"
+            },
+            {
+              "id": "support/how-to-handle-safe-reports",
+              "path": "/docs/support/how-to-handle-safe-reports"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
