@@ -6,7 +6,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'cooncesean', // Usually your GitHub org/user name.
-  projectName: 'handbook-test', // Usually your repo name.
+  projectName: 'handbook', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Mexodus Handbook',
@@ -123,7 +123,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/cooncesean/handbook-test/edit/master/',
+            'https://github.com/cooncesean/handbook/edit/master/',
         },
         theme: {
           colorMode: {
