@@ -36,6 +36,7 @@ module.exports = {
             ]
         },
         'engineering/retrospectives',
+        'engineering/product-requirements-template.md',
       ],
     },
     'contributing',
