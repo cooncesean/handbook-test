@@ -1,0 +1,19 @@
+# For all PRs into `master`, prevent merging unless
+# we are certain that we can build the site successfully.
+name: Continuous Integration
+
+on: pull_request
+  branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - run: yarn install
+      - run: yarn run build

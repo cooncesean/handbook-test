@@ -1,5 +1,8 @@
-name: CI
-on: [push]
+name: Deployment
+
+on: push
+  branches:
+    - master
 
 jobs:
   deploy:
