@@ -1,5 +1,7 @@
 ---
-name: Product Requirements Documents (PRDs)
+title: Product Requirements Documents
+sidebar_label: PRDs
+id: product-requirements-template
 ---
 
 This directory contains our product requirements documents. The intent of each document is to align stakeholders around core functionality we seek to include with the delivery of each feature.
