@@ -3,12 +3,11 @@ title: People Home
 sidebar_label: Home
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+This is the home page for People Ops.
 
 ## Markdown Syntax
 
-To serve as an example page when styling markdown based Docusaurus sites.
-
+To serve as an example page when styling markdown based sites.
 
 ---
 
