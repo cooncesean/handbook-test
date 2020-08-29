@@ -1,0 +1,19 @@
+{
+  "unversionedId": "people/benefits",
+  "id": "people/benefits",
+  "isDocsHomePage": false,
+  "title": "Benefits",
+  "description": "Benefits",
+  "source": "@site/docs/people/benefits.md",
+  "permalink": "/docs/people/benefits",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/people/benefits.md",
+  "sidebar": "docs",
+  "previous": {
+    "title": "People Home",
+    "permalink": "/docs/people/introduction"
+  },
+  "next": {
+    "title": "Communication",
+    "permalink": "/docs/people/communication"
+  }
+}

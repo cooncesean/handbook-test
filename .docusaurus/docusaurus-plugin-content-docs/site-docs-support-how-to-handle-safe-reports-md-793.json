@@ -1,0 +1,19 @@
+{
+  "unversionedId": "support/how-to-handle-safe-reports",
+  "id": "support/how-to-handle-safe-reports",
+  "isDocsHomePage": false,
+  "title": "Handling Safe Reports",
+  "description": "How to use Grafana to monitor data on pair and partner reliability.",
+  "source": "@site/docs/support/how-to-handle-safe-reports.md",
+  "permalink": "/docs/support/how-to-handle-safe-reports",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/support/how-to-handle-safe-reports.md",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Compensation at Mexodus",
+    "permalink": "/docs/people/compensation"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/engineering/eng-introduction"
+  }
+}

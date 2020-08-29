@@ -1,0 +1,20 @@
+{
+  "unversionedId": "people/compensation",
+  "id": "people/compensation",
+  "isDocsHomePage": false,
+  "title": "Compensation at Mexodus",
+  "description": "We want you to comfortable while working from home, which is why you you have a stipend for your new office set up when you start.",
+  "source": "@site/docs/people/compensation.md",
+  "permalink": "/docs/people/compensation",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/people/compensation.md",
+  "sidebar_label": "Compensation",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Communication",
+    "permalink": "/docs/people/communication"
+  },
+  "next": {
+    "title": "Handling Safe Reports",
+    "permalink": "/docs/support/how-to-handle-safe-reports"
+  }
+}

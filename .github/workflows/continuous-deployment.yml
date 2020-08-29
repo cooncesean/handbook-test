@@ -1,13 +1,15 @@
+# Once code has been merged to master, build the
+# static site and deploy it to s3.
 name: Deployments
 
-on:
-  push:
-    branches: [master]
+on:  # keyword that triggers the workflow
+  push:  # the action that the trigger listens to
+    branches: [master]  # optional filtering
 
-jobs:
-  deploy:
+jobs:  # describes the jobs that are executed within the workflow when the trigger fires
+  deploy:  # the job name
     runs-on: ubuntu-latest
-    steps:
+    steps:  # the discrete steps within the job
       - uses: actions/checkout@master
       - uses: cooncesean/s3-docusaurus-sync-action@cooncesean/tweak-home-dir
         env:
