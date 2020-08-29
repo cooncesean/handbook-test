@@ -5,9 +5,7 @@ sidebar_label: Home
 
 This is the home page for People Ops.
 
-## Markdown Syntax
-
-To serve as an example page when styling markdown based sites.
+This section contains everything you need to know to be a successful employee.
 
 ---
 
