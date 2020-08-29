@@ -14,7 +14,7 @@ const features = [
       <>
         This handbook is the central repository for how we run the company.
         This handbook is an evolving resource and meant to be updated.
-        You can do this by.
+        You can do this by contributing here.
      </>
     ),
   },
@@ -73,7 +73,7 @@ function Home() {
                     styles.getStarted,
                   )}
                   to={useBaseUrl('docs/introduction')}>
-                  Explore The Handbook
+                  Explore The Handbook!
                 </Link>
               </div>
             </div>
