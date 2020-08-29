@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Mexodus Handbook',
   tagline: 'Everything you need to know about how to be successful at Mexodus.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'http://handbook-test.s3-website-us-west-2.amazonaws.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
