@@ -32,7 +32,11 @@ module.exports = {
         //   label: 'Blog',
         //   position: 'right',
         // },
-      ],
+      ]
+    },
+    algolia : {
+      apiKey: '32f1f7956b3d2c3c90fbe259c7901d94',
+      indexName: 'lyft_clutch',
     },
     footer: {
       style: 'dark',

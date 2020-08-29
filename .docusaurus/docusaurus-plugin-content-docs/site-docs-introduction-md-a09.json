@@ -6,7 +6,7 @@
   "description": "The people introduction page.",
   "source": "@site/docs/introduction.md",
   "permalink": "/docs/introduction",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/introduction.md",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/introduction.md",
   "sidebar_label": "Introduction",
   "sidebar": "docs",
   "next": {

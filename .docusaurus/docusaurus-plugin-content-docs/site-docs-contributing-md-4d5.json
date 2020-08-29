@@ -3,13 +3,13 @@
   "id": "contributing",
   "isDocsHomePage": false,
   "title": "How To Contribute",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam",
+  "description": "Contributing",
   "source": "@site/docs/contributing.md",
   "permalink": "/docs/contributing",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/contributing.md",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/contributing.md",
   "sidebar": "docs",
   "previous": {
-    "title": "Retrospectives",
-    "permalink": "/docs/engineering/retrospectives"
+    "title": "Product Requirements Documents",
+    "permalink": "/docs/engineering/product-requirements-template"
   }
 }

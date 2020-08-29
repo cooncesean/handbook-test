@@ -22,8 +22,16 @@
               "path": "/docs/engineering/incident-reports/eos-tracking-downtime"
             },
             {
+              "id": "engineering/product-requirements-template",
+              "path": "/docs/engineering/product-requirements-template"
+            },
+            {
               "id": "engineering/retrospectives",
               "path": "/docs/engineering/retrospectives"
+            },
+            {
+              "id": "engineering/technical-design-docs/index",
+              "path": "/docs/engineering/technical-design-docs/index"
             },
             {
               "id": "engineering/technical-design-docs/template",

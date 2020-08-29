@@ -6,6 +6,6 @@
   "description": "Describes the downtime we had for EOS order tracking.",
   "source": "@site/docs/engineering/incident-reports/eos-tracking-downtime.md",
   "permalink": "/docs/engineering/incident-reports/eos-tracking-downtime",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/engineering/incident-reports/eos-tracking-downtime.md",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/engineering/incident-reports/eos-tracking-downtime.md",
   "sidebar_label": "Incident Report - EOS Order Tracking Downtime"
 }

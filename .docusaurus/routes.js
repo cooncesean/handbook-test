@@ -8,13 +8,23 @@ export default [
   exact: true,
 },
 {
+  path: '/__docusaurus/debug',
+  component: ComponentCreator('/__docusaurus/debug','fdd'),
+  exact: true,
+},
+{
   path: '/directory',
   component: ComponentCreator('/directory','079'),
   exact: true,
 },
 {
+  path: '/search',
+  component: ComponentCreator('/search','bc6'),
+  exact: true,
+},
+{
   path: '/docs',
-  component: ComponentCreator('/docs','53a'),
+  component: ComponentCreator('/docs','26a'),
   
   routes: [
 {
@@ -33,8 +43,18 @@ export default [
   exact: true,
 },
 {
+  path: '/docs/engineering/product-requirements-template',
+  component: ComponentCreator('/docs/engineering/product-requirements-template','398'),
+  exact: true,
+},
+{
   path: '/docs/engineering/retrospectives',
   component: ComponentCreator('/docs/engineering/retrospectives','2cf'),
+  exact: true,
+},
+{
+  path: '/docs/engineering/technical-design-docs/index',
+  component: ComponentCreator('/docs/engineering/technical-design-docs/index','4ab'),
   exact: true,
 },
 {
