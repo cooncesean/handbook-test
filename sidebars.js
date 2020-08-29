@@ -30,8 +30,7 @@ module.exports = {
             type: "category",
             label: "Technical Design Docs",
             items: [
-              "engineering/technical-design-docs/template",
-              "engineering/technical-design-docs/template",
+              "engineering/technical-design-docs/index",
               "engineering/technical-design-docs/template",
             ]
         },
