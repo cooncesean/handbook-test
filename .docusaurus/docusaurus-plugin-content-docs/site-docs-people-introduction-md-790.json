@@ -3,10 +3,10 @@
   "id": "people/introduction",
   "isDocsHomePage": false,
   "title": "People Home",
-  "description": "You can write content using GitHub-flavored Markdown syntax.",
+  "description": "This is the home page for People Ops.",
   "source": "@site/docs/people/introduction.md",
   "permalink": "/docs/people/introduction",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/people/introduction.md",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/people/introduction.md",
   "sidebar_label": "Home",
   "sidebar": "docs",
   "previous": {

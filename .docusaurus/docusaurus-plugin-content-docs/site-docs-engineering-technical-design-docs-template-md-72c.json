@@ -6,11 +6,11 @@
   "description": "Your TDD Title",
   "source": "@site/docs/engineering/technical-design-docs/template.md",
   "permalink": "/docs/engineering/technical-design-docs/template",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/engineering/technical-design-docs/template.md",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/engineering/technical-design-docs/template.md",
   "sidebar": "docs",
   "previous": {
-    "title": "Template",
-    "permalink": "/docs/engineering/technical-design-docs/template"
+    "title": "Technical Design Documents (TDDs)",
+    "permalink": "/docs/engineering/technical-design-docs/index"
   },
   "next": {
     "title": "Retrospectives",

@@ -3,10 +3,10 @@
   "id": "people/compensation",
   "isDocsHomePage": false,
   "title": "Compensation at Mexodus",
-  "description": "Markdown Syntax",
+  "description": "We want you to comfortable while working from home, which is why you you have a stipend for your new office set up when you start.",
   "source": "@site/docs/people/compensation.md",
   "permalink": "/docs/people/compensation",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/people/compensation.md",
+  "editUrl": "https://github.com/cooncesean/handbook/edit/master/docs/people/compensation.md",
   "sidebar_label": "Compensation",
   "sidebar": "docs",
   "previous": {

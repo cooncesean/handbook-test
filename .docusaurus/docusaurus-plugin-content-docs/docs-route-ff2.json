@@ -62,13 +62,8 @@
             "items": [
               {
                 "type": "link",
-                "label": "Template",
-                "href": "/docs/engineering/technical-design-docs/template"
-              },
-              {
-                "type": "link",
-                "label": "Template",
-                "href": "/docs/engineering/technical-design-docs/template"
+                "label": "TDD readme",
+                "href": "/docs/engineering/technical-design-docs/index"
               },
               {
                 "type": "link",
@@ -81,6 +76,11 @@
             "type": "link",
             "label": "Retrospectives",
             "href": "/docs/engineering/retrospectives"
+          },
+          {
+            "type": "link",
+            "label": "PRDs",
+            "href": "/docs/engineering/product-requirements-template"
           }
         ]
       },
@@ -94,7 +94,9 @@
   "permalinkToSidebar": {
     "/docs/contributing": "docs",
     "/docs/engineering/eng-introduction": "docs",
+    "/docs/engineering/product-requirements-template": "docs",
     "/docs/engineering/retrospectives": "docs",
+    "/docs/engineering/technical-design-docs/index": "docs",
     "/docs/engineering/technical-design-docs/template": "docs",
     "/docs/introduction": "docs",
     "/docs/people/benefits": "docs",

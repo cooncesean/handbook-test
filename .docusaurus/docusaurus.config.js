@@ -1,12 +1,12 @@
 export default {
   "title": "Mexodus Handbook",
   "tagline": "Everything you need to know about how to be successful at Mexodus.",
-  "url": "https://your-docusaurus-test-site.com",
+  "url": "http://handbook-test.s3-website-us-west-2.amazonaws.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "favicon": "img/favicon.ico",
   "organizationName": "cooncesean",
-  "projectName": "handbook-test",
+  "projectName": "handbook",
   "themeConfig": {
     "navbar": {
       "title": "Mexodus Handbook",
@@ -29,6 +29,11 @@ export default {
         }
       ],
       "hideOnScroll": false
+    },
+    "algolia": {
+      "apiKey": "32f1f7956b3d2c3c90fbe259c7901d94",
+      "indexName": "lyft_clutch",
+      "appId": "BH4D9OD16A"
     },
     "footer": {
       "style": "dark",
@@ -127,11 +132,7 @@ export default {
         "docs": {
           "homePageId": "doc1",
           "sidebarPath": "/Users/coonce/dev/handbook-test/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/"
-        },
-        "blog": {
-          "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/"
+          "editUrl": "https://github.com/cooncesean/handbook/edit/master/"
         },
         "theme": {
           "colorMode": {

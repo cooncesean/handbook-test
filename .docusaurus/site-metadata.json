@@ -14,11 +14,15 @@
       "type": "package",
       "version": "2.0.0-alpha.61"
     },
-    "docusaurus-plugin-sitemap": {
+    "docusaurus-plugin-debug": {
       "type": "package",
       "version": "2.0.0-alpha.61"
     },
     "docusaurus-theme-classic": {
+      "type": "package",
+      "version": "2.0.0-alpha.61"
+    },
+    "docusaurus-theme-search-algolia": {
       "type": "package",
       "version": "2.0.0-alpha.61"
     }
