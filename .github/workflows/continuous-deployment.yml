@@ -18,11 +18,19 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
-
   notify:
-    needs: deploy
+    uses: voxmedia/github-action-slack-notify-build@v1
+    with:
+      channel: handboook-updates
+      status: STARTED
+      color: good
     env:
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-    uses: pullreminders/slack-action@master
-    with:
-      args: '{\"channel\":\"C019B86JS7R\",\"text\":\"Hello world\"}'
+  # notify:
+  #   needs: deploy
+  #   steps:
+  #     - uses: pullreminders/slack-action@master
+  #     env:
+  #       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  #   with:
+  #     args: '{\"channel\":\"C019B86JS7R\",\"text\":\"Hello world\"}'
