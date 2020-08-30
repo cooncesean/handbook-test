@@ -19,13 +19,15 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
   notify:
-    uses: voxmedia/github-action-slack-notify-build@v1
-    with:
-      channel: handboook-updates
-      status: STARTED
-      color: good
-    env:
-      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    steps:
+    - uses: voxmedia/github-action-slack-notify-build@v1
+      with:
+        channel: handboook-updates
+        status: SUCCESS
+        color: good
+        message: 'hello'
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
   # notify:
   #   needs: deploy
   #   steps:
