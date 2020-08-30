@@ -81,11 +81,6 @@
             "type": "link",
             "label": "PRDs",
             "href": "/docs/engineering/product-requirements-template"
-          },
-          {
-            "type": "link",
-            "label": "PRDs",
-            "href": "/docs/engineering/product-requirements-template"
           }
         ]
       },
