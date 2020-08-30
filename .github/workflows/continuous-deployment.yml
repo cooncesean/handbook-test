@@ -2,14 +2,14 @@
 # static site and deploy it to s3.
 name: Deployments
 
-on:  # keyword that triggers the workflow
-  push:  # the action that the trigger listens to
-    branches: [master]  # optional filtering
+on:
+  push:
+    branches: [master]
 
-jobs:  # describes the jobs that are executed within the workflow when the trigger fires
-  deploy:  # the job name
+jobs:
+  deploy:
     runs-on: ubuntu-latest
-    steps:  # the discrete steps within the job
+    steps:
       - uses: actions/checkout@master
       - uses: cooncesean/s3-docusaurus-sync-action@cooncesean/tweak-home-dir
         env:
@@ -18,3 +18,11 @@ jobs:  # describes the jobs that are executed within the workflow when the trigg
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
+
+  notify:
+    needs: deploy
+    env:
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    uses: pullreminders/slack-action@master
+    with:
+      args: '{\"channel\":\"C019B86JS7R\",\"text\":\"Hello world\"}'
