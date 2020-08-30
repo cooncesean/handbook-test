@@ -7,7 +7,7 @@
         {
           "name": null,
           "path": "/docs",
-          "mainDocId": "introduction",
+          "mainDocId": "engineering/eng-introduction",
           "docs": [
             {
               "id": "contributing",
