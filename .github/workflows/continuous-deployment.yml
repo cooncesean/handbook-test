@@ -26,7 +26,6 @@ jobs:
         channel: handboook-updates
         status: SUCCESS
         color: good
-        message: 'hello'
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
   # notify:
