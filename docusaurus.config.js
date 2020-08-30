@@ -29,7 +29,7 @@ module.exports = {
         },
         {
           href: 'https://github.com/ExodusMovement/engineering-handbook',
-          label: 'Q3 OKRs',
+          label: 'Announcements',
           position: 'right',
         },
       ]
