@@ -4,7 +4,7 @@ sidebar_label: Introduction
 description: The people introduction page.
 ---
 
-Welcome to the Employee Handbook! 👋
+Hey JP! Welcome to the Employee Handbook! 👋
 
 If you're reading this for the first time, you are probably a new team member joining us. We are so excited to have you here! In this handbook, you will find 🔍 all the information you need to learn about how we run the Company, and how we have grown over time. As we continue growing, we will continue to add resources and knowledge relevant here.
 
