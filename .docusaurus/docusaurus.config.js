@@ -26,6 +26,11 @@ export default {
           "activeBasePath": "/directory",
           "label": "Company Directory",
           "position": "right"
+        },
+        {
+          "href": "https://github.com/ExodusMovement/engineering-handbook",
+          "label": "Q3 OKRs",
+          "position": "right"
         }
       ],
       "hideOnScroll": false
