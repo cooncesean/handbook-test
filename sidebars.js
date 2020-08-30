@@ -36,7 +36,6 @@ module.exports = {
         },
         'engineering/retrospectives',
         'engineering/product-requirements-template',
-        'engineering/file-does-not-exist',
       ],
     },
     'contributing',
