@@ -22,8 +22,8 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: pullreminders/slack-action@master
-      - with:
-          args: '{\"channel\":\"C019B89UYA3\",\"text\":\"New build available at: http://handbook-test.s3-website-us-west-2.amazonaws.com/\"}'
-    env:
-      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    - uses: pullreminders/slack-action@master
+      with:
+        args: '{\"channel\":\"C019B89UYA3\",\"text\":\"New build available at: http://handbook-test.s3-website-us-west-2.amazonaws.com/\"}'
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
