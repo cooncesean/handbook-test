@@ -1,0 +1,17 @@
+# After a release has been made, publish the release
+# notes to Slack
+name: Release Handler
+
+on:
+  release:
+    types: [published, created]
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: pullreminders/slack-action@master
+      with:
+        args: '{\"channel\":\"C019B89UYA3\",\"text\":\"New Release"}'
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
