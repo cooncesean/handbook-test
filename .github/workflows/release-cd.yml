@@ -8,7 +8,6 @@ on:
 
 jobs:
   send_to_slack:
-    needs: deploy
     runs-on: ubuntu-latest
     steps:
     - uses: pullreminders/slack-action@master
