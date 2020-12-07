@@ -2,28 +2,41 @@
 # static site and deploy it to s3.
 name: Deployments
 
-on:
-  push:
-    branches: [master]
+# bare minimal
+# TODO: add back in `name: changes`
+on: push
 
 jobs:
-  deploy:
+  changes:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: cooncesean/s3-docusaurus-sync-action@cooncesean/tweak-home-dir
-        env:
-          AWS_DEFAULT_REGION: "us-west-2"
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
-  notify:
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-    - uses: pullreminders/slack-action@master
-      with:
-        args: '{\"channel\":\"C019B89UYA3\",\"text\":\"New build available at: http://handbook-test.s3-website-us-west-2.amazonaws.com/\"}'
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.3
+
+
+
+# on:
+#   push:
+#     branches: [master]
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@master
+#       - uses: cooncesean/s3-docusaurus-sync-action@cooncesean/tweak-home-dir
+#         env:
+#           AWS_DEFAULT_REGION: "us-west-2"
+#           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
+#   notify:
+#     needs: deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: pullreminders/slack-action@master
+#       with:
+#         args: '{\"channel\":\"C019B89UYA3\",\"text\":\"New build available at: http://handbook-test.s3-website-us-west-2.amazonaws.com/\"}'
+#       env:
+#         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
