@@ -14,18 +14,22 @@ jobs:
         uses: trilom/file-changes-action@v1.2.3
         with:
           githubToken: ${{ secrets.GH_API_TOKEN }}
+
       # - name: test
       #   run: |
       #     cat $HOME/files_modified.json
       #     echo '${{ steps.file-changes.outputs.files_modified}}'
 
       - id: parse-modified-files
+        if: contains(steps.file-changes.outputs.files_modified, 'yml')
         uses: actions/github-script@v3
-        with:
-          script: return "Hello!"
-          result-encoding: string
-      - name: Get result
-        run: echo "${{steps.file-changes.outputs.files_modified}}"
+        # with:
+        #   script: return "Hello!"
+        #   result-encoding: string
+      - name: Optional Fetch Modified Files
+        run: |
+          echo "In Parse Modified Results step."
+          echo "${{steps.file-changes.outputs.files_modified}}"
 
 
 
