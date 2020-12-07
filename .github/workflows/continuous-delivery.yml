@@ -10,20 +10,24 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     steps:
-      - id: file_changes
+      - id: file-changes
         uses: trilom/file-changes-action@v1.2.3
         with:
           githubToken: ${{ secrets.GH_API_TOKEN }}
       - name: test
         run: |
-          cat $HOME/files.json
           cat $HOME/files_modified.json
-          cat $HOME/files_added.json
-          cat $HOME/files_removed.json
-          echo '${{ steps.file_changes.outputs.files}}'
-          echo '${{ steps.file_changes.outputs.files_modified}}'
-          echo '${{ steps.file_changes.outputs.files_added}}'
-          echo '${{ steps.file_changes.outputs.files_removed}}'
+          echo '${{ steps.file-changes.outputs.files_modified}}'
+
+      - id: parse-modified-files
+        uses: actions/github-script@v3
+        with:
+          script: return "Hello!"
+          result-encoding: string
+      - name: Get result
+        run: echo "${{steps.file-changes.outputs.result}}"
+
+
 
 
 # on:
