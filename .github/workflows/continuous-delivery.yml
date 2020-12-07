@@ -13,7 +13,7 @@ jobs:
       - id: file-changes
         uses: trilom/file-changes-action@v1.2.3
         with:
-          githubToken: ${{ secrets.GH_API_TOKEN }}
+          githubToken: ${{ secrets.GH_API_TOKEN }}  # grants access to the private repo
 
       # - name: test
       #   run: |
@@ -27,7 +27,7 @@ jobs:
         #   script: return "Hello!"
         #   result-encoding: string
       - name: Optional Fetch Modified Files
-        if: contains(steps.file-changes.outputs.files_modified, 'FOOOOBEANS')
+        if: contains(steps.file-changes.outputs.files_modified, 'yml')
         run: |
           echo "In Parse Modified Results step."
           echo "${{steps.file-changes.outputs.files_modified}}"
