@@ -22,7 +22,7 @@ jobs:
 
       - id: parse-modified-files
         if: contains(steps.file-changes.outputs.files_modified, 'yml')
-        uses: actions/github-script@v3
+        # uses: actions/github-script@v3
         # with:
         #   script: return "Hello!"
         #   result-encoding: string
