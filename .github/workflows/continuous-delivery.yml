@@ -20,6 +20,7 @@ jobs:
       - name: Get result
         run: |
           npm install js-yaml
+          pwd
 
       - uses: actions/github-script@v3
         id: parse-mobile-yaml
