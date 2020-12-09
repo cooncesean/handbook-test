@@ -20,7 +20,7 @@ jobs:
           foo: 'bar'
       - run: npm install js-yaml
       # - run: git log -1 --name-only  // for some reason, on the VM, this shows ALLLL files in the repo :/
-      - run: echo {$foo}
+      - run: echo "{$foo}"
 
 
 
