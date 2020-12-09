@@ -23,6 +23,9 @@ jobs:
           # github-token: ${{secrets.GITHUB_TOKEN}}
           script: return "I will be string (not JSON) encoded!"
 
+      - name: Get result
+        run: echo "${{steps.parse-mobile-yaml.outputs.result}}"
+
       # - name: check-git
       #   env:
       #   - foo='bara'
