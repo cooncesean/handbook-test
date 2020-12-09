@@ -16,11 +16,14 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: check-git
         env:
-          foo: 'bar'
-      - run: npm install js-yaml
+          foo='bara'
+        run: |
+          npm install js-yaml
+          echo "{$foo}"
       # - run: git log -1 --name-only  // for some reason, on the VM, this shows ALLLL files in the repo :/
-      - run: echo "{$foo}"
+
 
 
 
