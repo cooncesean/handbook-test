@@ -10,29 +10,42 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     steps:
-      - id: file-changes
-        uses: trilom/file-changes-action@v1.2.3
+      - uses: actions/checkout@master
         with:
-          githubToken: ${{ secrets.GH_API_TOKEN }}  # grants access to the private repo
-
-      # - name: test
-      #   run: |
-      #     cat $HOME/files_modified.json
-      #     echo '${{ steps.file-changes.outputs.files_modified}}'
-
-      # - id: parse-modified-files
-        # if: contains(steps.file-changes.outputs.files_modified, 'yml')
-        # uses: actions/github-script@v3
-        # with:
-        #   script: return "Hello!"
-        #   result-encoding: string
-      - name: Optional Fetch Modified Files
-        if: contains(steps.file-changes.outputs.files_modified, 'yml')
-        run: |
-          echo "In Parse Modified Results step."
-          echo "${{steps.file-changes.outputs.files_modified}}"
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm install js-yaml
+      - run: git log
 
 
+
+    # runs-on: ubuntu-latest
+    # steps:
+    #   - id: file-changes
+    #     uses: trilom/file-changes-action@v1.2.3
+    #     with:
+    #       githubToken: ${{ secrets.GH_API_TOKEN }}  # grants access to the private repo
+    #   - name: Optional Fetch Modified Files
+    #     if: contains(steps.file-changes.outputs.files_modified, 'yml')
+    #     uses: actions/setup-node@v1
+    #       with:
+    #         node-version: 12
+    #     run: |
+    #       npm install js-yaml
+    #       echo "In Parse Modified Results step."
+    #       echo "${{steps.file-changes.outputs.files_modified}}"
+
+
+    # steps:
+    # - uses: actions/checkout@v2
+    # - name: Checkout Code
+    #   - uses: actions/setup-node@v1
+    #     with:
+    #       node-version: 12
+    #   - run: npm install js-yaml
+    #   - run:
 
 
 # on:
