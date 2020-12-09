@@ -18,7 +18,7 @@ jobs:
           node-version: 12
       - name: check-git
         env:
-          foo='bara'
+          - foo='bara'
         run: |
           npm install js-yaml
           echo "{$foo}"
