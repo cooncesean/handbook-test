@@ -1,0 +1,146 @@
+####################
+# The remote configuration endpoints for our mobile wallets
+#
+# Warning:
+#   Everything in this file is an "overlay" or deep merge
+#   on top of the values from ./exodus.yml
+#
+# Please only put items in this file which need to _override_ the settings for
+# mobile.  Please put all other settings inside exodus.yml
+####################
+
+infrastructure:
+  fiatOnboarding:
+    # if unavailable change `true` to `false`
+    available: true
+
+    # you can set a custom status when offline (when available: false)
+    # unavailableStatus: "We're experiencing delays with our 'Buy Bitcoin' service. We are currently fulfilling all pending orders and will restore operations once this process is complete."
+
+    # available in
+    countries:
+      AR: Argentina
+      AT: Austria
+      AU: Australia
+      BE: Belgium
+      BO: Bolivia
+      BR: Brazil
+      #BY: Belarus
+      CA: Canada
+      CH: Switzerland
+      CL: Chile
+      CO: Colombia
+      CR: Costa Rica
+      CY: Cyprus
+      CZ: Czechia
+      DE: Germany
+      DK: Denmark
+      DO: Dominica
+      DZ: Algeria
+      EE: Estonia
+      ES: Spain
+      FI: Finland
+      FR: France
+      GB: United Kingdom
+      GR: Greece
+      HK: Hong Kong
+      ID: Indonesia
+      IE: Ireland
+      IL: Israel
+      #IN: India
+      IS: Iceland
+      IT: Italy
+      JP: Japan
+      KR: Korea
+      LA: Laos
+      LT: Lithuania
+      LU: Luxembourg
+      LV: Latvia
+      MX: Mexico
+      MY: Malaysia
+      NL: Netherlands
+      NO: Norway
+      NP: Nepal
+      NZ: New Zealand
+      PE: Peru
+      PH: Philippines
+      PL: Poland
+      PT: Portugal
+      PY: Paraguay
+      SE: Sweden
+      SG: Singapore
+      SI: Slovenia
+      SK: Slovakia
+      TH: Thailand
+      TR: Turkey
+      TZ: Tanzania
+      US: United States # never remove or comment this line
+      VN: Vietnam
+      ZA: South Africa
+
+    # unavailable in
+    states:
+      CT: Connecticut
+      HI: Hawaii
+      NH: New Hampshire
+      NY: New York
+      TX: Texas
+      VA: Virginia
+      VT: Vermont
+
+    # allow credit cards
+    creditCards: true
+
+    # ---
+
+    # v1 deprecated on 25-3-2020
+    # v2 deprecated on 26-3-2020
+    # v3 deprecated on 27-3-2020
+    # v4 deprecated on 2-4-2020
+    # v5 deprecated on 6-4-2020
+    # v6 deprecated on 9-4-2020
+    # v7 deprecated on 18-4-2020
+    version: 8
+
+  # same as above format for wyre
+  primeTrust:
+    # if unavailable change `true` to `false`
+    available: false
+
+    # if disabling only kyc and leaving buying on change `false` to `true`
+    disableKyc: false
+
+    # you can set a custom status when offline (when available: false)
+    # unavailableStatus: "We're experiencing delays with our 'Buy Bitcoin' service. We are currently fulfilling all pending orders and will restore operations once this process is complete."
+
+    # available in
+    countries:
+      US: United States
+
+    # unavailable in
+    states: none
+
+    # ---
+    version:
+      - 2
+      - 3
+
+assets:
+  bitcoin:
+    rbfEnabled: true
+
+  bcash:
+    status:
+      text: 'The BCH network upgrade is now complete. Sending BCH funds will mean that you are sending both unsplit BCH and BCHABC. Please contact support if you need assistance.'
+    forkWarningEnabled: false
+
+  golem:
+    status:
+      text: 'Golem (GNT) is undergoing a token migration. Exchanging GNT will be temporarily unavailable during this period. Feel free to reach out at support@exodus.io with any questions.'
+#  ethereum:
+#    status:
+#      text: 'We are currently experiencing issues with ETH and ERC20 transactions. You may notice fund balances in your wallet display incorrectly. Please be assured that your funds are safe; we are working to rectify the issue ASAP. Exchanging ETH/ERC20 is currently unavailable. If you have any questions, please contact us at support@exodus.io'
+
+#   bittorrent:
+#     status:
+#       text: 'Sending is currently unavailable for BTT. You may also notice that your balance is incorrect. There is no need to worry as your funds are safe and we are hard at work to get this resolved as soon as possible. You can reach out to support@exodus.io with any questions you may have as we are more than happy to help!'

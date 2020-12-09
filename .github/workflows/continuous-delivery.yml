@@ -17,9 +17,10 @@ jobs:
         with:
           node-version: 12
       - run: npm install js-yaml
-      - run: git log -1 --name-only
-      # - run: git log -1 --name-only --oneline
-
+      # - run: git log -1 --name-only  // for some reason, on the VM, this shows ALLLL files in the repo :/
+      - env:
+          foo: 'bar'
+      - run: echo {$foo}
 
 
 
