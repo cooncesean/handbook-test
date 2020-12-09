@@ -16,12 +16,19 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: check-git
-        env:
-        - foo='bara'
-        run: |
-          npm install js-yaml
-          echo "{$foo}"
+
+      - uses: actions/github-script@v3
+        id: parse-mobile-yaml
+        with:
+          # github-token: ${{secrets.GITHUB_TOKEN}}
+          script: return "I will be string (not JSON) encoded!"
+
+      # - name: check-git
+      #   env:
+      #   - foo='bara'
+      #   run: |
+      #     npm install js-yaml
+      #     echo "{$foo}"
       # - run: git log -1 --name-only  // for some reason, on the VM, this shows ALLLL files in the repo :/
 
 
