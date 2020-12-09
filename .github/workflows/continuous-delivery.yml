@@ -25,6 +25,8 @@ jobs:
 
       - name: Get result
         run: echo "${{steps.parse-mobile-yaml.outputs.result}}"
+        run: npm install js-yaml
+
 
       # - name: check-git
       #   env:
