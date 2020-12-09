@@ -17,7 +17,8 @@ jobs:
         with:
           node-version: 12
       - run: npm install js-yaml
-      - run: git log -1 --name-only --oneline
+      - run: git log
+      # - run: git log -1 --name-only --oneline
 
 
 
