@@ -20,7 +20,6 @@ jobs:
       - name: Get result
         run: |
           npm install js-yaml
-          pwd
 
       - uses: actions/github-script@v3
         id: parse-mobile-yaml
@@ -28,9 +27,8 @@ jobs:
           # github-token: ${{secrets.GITHUB_TOKEN}}
           # script: return "I will be json encoded!"
           script: |
-            const yaml = require('js-yaml');
-            const fs   = require('fs');
-            const doc = yaml.safeLoad(fs.readFileSync('mobile.yml', 'utf8'));
+            const fs = require('fs');
+            const doc = fs.readFileSync('mobile.yml', 'utf8');
             console.log(doc);
 
 
