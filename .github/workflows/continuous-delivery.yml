@@ -24,8 +24,9 @@ jobs:
           script: return "I will be json encoded!"
 
       - name: Get result
-        run: echo "${{steps.parse-mobile-yaml.outputs.result}}"
-        run: npm install js-yaml
+        run: |
+          echo "${{steps.parse-mobile-yaml.outputs.result}}"
+          npm install js-yaml
 
 
       # - name: check-git
