@@ -41,7 +41,7 @@ jobs:
         run: |
           npm install js-yaml
           echo "fuck yeah"
-          node "${{steps.parse-mobile-yaml.outputs.result}}"
+          node js-yaml mobile.yml
 
       # - name: check-git
       #   env:
