@@ -38,9 +38,10 @@ jobs:
           script: return "const yaml = require('js-yaml');const fs = require('fs');const doc = yaml.safeLoad(fs.readFileSync('mobile.yml', 'utf8'));console.log(doc);"
 
       - name: Run Ad-Hoc JS Script
-        run: npm install js-yaml
-        run: echo "fuck yeah"
-        run: node ${{steps.parse-mobile-yaml.outputs.result}}
+        run: |
+          npm install js-yaml
+          echo "fuck yeah"
+          node ${{steps.parse-mobile-yaml.outputs.result}}
 
       # - name: check-git
       #   env:
