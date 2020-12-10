@@ -27,6 +27,7 @@ jobs:
         with:
 
           script: |
+            npm install js-yaml;
             const yaml = require('js-yaml');
             const fs = require('fs');
             const doc = yaml.safeLoad(fs.readFileSync('mobile.yml', 'utf8'));
