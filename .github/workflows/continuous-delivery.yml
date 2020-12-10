@@ -7,7 +7,7 @@ name: Deployments
 on: push
 
 jobs:
-  changes:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -16,18 +16,16 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: npm install js-yaml
 
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm install
-
+  parse:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
       - uses: actions/github-script@v3
         id: parse-mobile-yaml
         with:
-
           script: |
-            npm install js-yaml;
             const yaml = require('js-yaml');
             const fs = require('fs');
             const doc = yaml.safeLoad(fs.readFileSync('mobile.yml', 'utf8'));
